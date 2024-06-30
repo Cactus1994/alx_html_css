@@ -1,0 +1,22 @@
+/* base.css: Basic styles for the webpage */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+main {
+    padding: 1em;
+}
+
+article, aside {
+    padding: 1em;
+    border: 1px solid #ddd;
+    margin: 0.5em;
+}
