@@ -20,3 +20,14 @@ article, aside {
     border: 1px solid #ddd;
     margin: 0.5em;
 }
+
+/* Responsive Styles */
+.works_on_smartphone main {
+    flex-direction: column;
+}
+
+.works_on_smartphone article,
+.works_on_smartphone aside {
+    flex: 1;
+    margin-bottom: 1em;
+}
