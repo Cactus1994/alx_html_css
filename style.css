@@ -1,112 +1,67 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Example CSS for "What we do..." section */
+
+.what-we-do {
+    background-color: #f8f9fa;
+    padding: 50px 0;
 }
 
-html {
-    font-size: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-/* CSS Variables */
-:root {
-    --primary-color: #FF6565;
-    --secondary-color: #f8f9fa;
-    --font-family: 'Source Sans Pro', sans-serif;
-    --max-width: 1000px;
-    --header-height: 80px;
-    --hero-height: 400px;
-}
-
-/* General Styles */
-body {
-    font-family: var(--font-family);
-    margin: 0;
-    padding: 0;
-    max-width: var(--max-width);
+.what-we-do .container {
+    max-width: 1000px;
     margin: 0 auto;
-    background-color: var(--secondary-color);
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--header-height);
-    background-color: var(--secondary-color);
-    padding: 0 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-header .logo img {
-    width: 50px;
-    height: auto;
-}
-
-header nav ul {
-    display: flex;
-    gap: 20px;
-}
-
-header nav ul li a:hover, header nav ul li a:active {
-    color: var(--primary-color);
-}
-
-/* Hero Section Styles */
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: var(--hero-height);
-    background-image: url('images/hero-background.jpg'); /* Update with actual image */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
     text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: calc(33.33% - 20px);
     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
+.service i {
+    font-size: 48px;
+    color: #007bff;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    border-top: 1px solid #ddd;
+.service p {
+    font-size: 1rem;
+    color: #6c757d;
 }
 
-/* Responsive Design */
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
+/* Example for custom icons */
+.icon {
+    font-family: 'holberton_school-icon';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-    header, footer {
-        text-align: center;
-    }
+.icon-service1::before {
+    content: "\e900"; /* Replace with the actual code for your icon */
+}
 
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+.icon-service2::before {
+    content: "\e901"; /* Replace with the actual code for your icon */
 }
