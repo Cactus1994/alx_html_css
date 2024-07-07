@@ -19,4 +19,4 @@ This project is a fully functional web page created based on a design by Nicolas
 
 ## Author
 - Nicolas Philippot (Design)
-- [Your Name] (Implementation)
+- souhail sabbar (Implementation)
